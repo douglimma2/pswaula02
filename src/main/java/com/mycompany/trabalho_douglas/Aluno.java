@@ -7,7 +7,7 @@ package com.mycompany.trabalho_douglas;
 
 /**
  *
- * @author Douglas
+ * @author Douglas Lima
  */
 public class Aluno {
     
@@ -34,6 +34,12 @@ public class Aluno {
      * O aluno foi REPROVADO direto,
      * O aluno foi para Prova final
      * Caso o aluno vá para Prova final, note que é necessário realizar a entrada de um novo argumento
+     * @author Douglas Lima
+     * @param p1 double = nota da prova 1
+     * @param trabalho double = nota do trabalho
+     * @param projetos double = nota final dos projetos durante o curso
+     * @param frequencia double = presença na sala de aula, não pode ser menor que 75%
+     * @return String - Situação do aluno
      */
     public String situacao(double p1, double trabalho, double projetos, double frequencia){
         m1 = 0.7 * ((p1 + trabalho)/2) + projetos * 0.3;
@@ -58,6 +64,13 @@ public class Aluno {
      * O aluno foi APROVADO NA PF.
      * O aluno foi REPROVADO NA PF,
      * Note que esse método só será executado se houver a necessidade da nota da PF
+     * @author Douglas Lima
+     * @param p1 double = nota da prova 1
+     * @param trabalho double = nota do trabalho
+     * @param projetos double = nota final dos projetos durante o curso
+     * @param frequencia double = presença na sala de aula, não pode ser menor que 75%
+     * @param pf = nota da prova final, caso haja necessidade
+     * @return String - Situação do aluno
      * 
      */
     public String situacao(double p1, double trabalho, double projetos, double frequencia, double pf){
